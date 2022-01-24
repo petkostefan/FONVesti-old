@@ -7,8 +7,8 @@ Registracija
 Dobro došli
 {% endblock %}
 {% block body %}
-<div class="container">
-<div class="row">
+<div class="d-flex justify-content-center">
+    <div class=" mt-5 card card-body border-info" style="max-width: 700px;">
     <form method="post">
         {% csrf_token %}
         {{form|crispy}}
