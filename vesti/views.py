@@ -33,7 +33,7 @@ def vesti_4semestar(request):
 
     lista_vesti = []
     for izvor in izvori:
-        vest = Vest.objects.filter(izvor=izvor).order_by('id')[0]
+        vest = Vest.objects.filter(izvor=izvor).order_by('-vreme')[0]
         vest.vreme = ulepsaj_datum(vest.vreme)
         vest.tip = oznaci_tip(vest.vreme)
         vest.opis = vest.opis[:200] 

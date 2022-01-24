@@ -27,24 +27,3 @@ class Vest(models.Model):
 
     class Meta:
         verbose_name_plural = 'vesti'
-
-
-# class VestOsnovneStudije(models.Model):
-#     naslov = models.CharField(max_length=255)
-#     opis = models.TextField()
-#     vreme = models.DateTimeField()
-#     link = models.CharField(max_length=255)
-#     img_link = models.CharField(max_length=255, null=True)
-
-#     def __str__(self):
-#         return self.naslov
-
-
-# class VestPredmet(models.Model):
-#     naslov = models.CharField(max_length=255)
-#     opis = models.TextField()
-#     vreme = models.DateTimeField()
-#     link = models.CharField(max_length=255)
-
-#     def __str__(self):
-#         return self.naslov
