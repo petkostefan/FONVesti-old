@@ -8,5 +8,5 @@ urlpatterns = [
     path('', VestiOSView.as_view(), name='pocetna'),
     path('izbor-semestra', izbor_semestra, name='izbor-semestra'),
     path('cetvrti', vesti_4semestar, name='cetvrti'),
-    path('<str:slug>', vesti_jednog_predmeta)
+    path('predmet/<str:slug>', vesti_jednog_predmeta)
 ]
